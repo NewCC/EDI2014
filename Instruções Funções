@@ -1,0 +1,59 @@
+    Faça uma função leituraContas que receba o vetor de contas, leia o arquivo Contas.txt, insira cada conta nas posições do vetor de contas e retorna o número total de contas. Protótipo da função:
+
+int leituraContas(Conta *vetorContas);
+
+    [0,5 ponto] Faça uma função leituraItens que receba o vetor de itens, leia o arquivo Itens.txt, insira cada item nas posições do vetor de itens e retorna o número total de itens. Protótipo da função:
+
+int leituraItens(Item *vetorItens);
+
+    [0,5 ponto] Faça uma função leituraCompras que receba o vetor de compras, leia o arquivo Compras.txt, insira cada compra nas posições do vetor de compras e retorna o número total de compras. Protótipo da função:
+
+int leituraCompras(Compra *vetorCompras);
+
+    [0,5 ponto] Faça uma função gravaContas que receba o número total de contas e o vetor de contas, e grave no arquivo Contas.txt, respeitando o formato do mesmo. Protótipo da função:
+
+void gravaContas(int nContas, Conta *vetorContas);
+
+    [0,5 ponto] Faça uma função gravaItens que receba o número total de itens e o vetor de itens, e grave no arquivo Itens.txt, respeitando o formato do mesmo. Protótipo da função:
+
+void Itens(int nItens, Item *vetorItens);
+
+    [0,5 ponto] Faça uma função gravaCompras que receba o número total de compras e o vetor de compras, e grave no arquivo Compras.txt, respeitando o formato do mesmo. Protótipo da função:
+
+void gravaCompras(int nCompras, Compra *vetorCompras);
+
+    [0,5 ponto] Faça uma função capturaConta que receba o código de uma conta, o número total de contas e o vetor de contas, e retorna a conta com este código. Caso não exista nenhuma conta com o código informado, retorna NULL. Protótipo da função:
+
+Conta* capturaConta(int codigo, int nContas, Conta *vetorContas);
+
+    [0,5 ponto] Faça uma função capturaItem que receba o código de um item, o número total de itens e o vetor de itens, e retorna o item com este código. Caso não exista nenhum item com o código informado, retorna NULL. Protótipo da função:
+
+Item* capturaItem(int codigo, int nItens, Item *vetorItens);
+
+    [0,5 ponto] Faça uma função novaConta que receba o vetor de contas, solicita ao usuário as informações nome do cliente e crédito (o código da conta deve ser um valor sequencial, iniciado em 1), armazena no vetor de contas e incrementa o número total de contas. Protótipo da função:
+
+void novaConta(int *nContas, Conta *vetorContas);
+
+    [0,5 ponto] Faça uma função novoItem que receba o vetor de itens, solicita ao usuário as informações descrição do item, quantidade e preço unitário (o código do item deve ser um valor sequencial, iniciado em 1), armazena no vetor de itens e incrementa o número de itens. Protótipo da função:
+
+void novoItem(int *nItens, Item *vetorItens);
+
+    [1 ponto] Faça uma função novaCompra que receba o número total de contas, o vetor de contas, o número total de itens, o vetor de itens, o número total de compras e o vetor de compras, solicita ao usuário as informações código da conta, o código do item e a quantidade. Caso a quantidade do produto em estoque (armazenada no vetor de itens) seja superior ao da nova compra, atualiza a quantidade do item em estoque, armazena a nova compra no vetor de compras e incrementa o número total de compras. Caso contrário, exibe a mensagem de erro: Quantidade de itens em estoque inferior ao solicitado e não adiciona a nova compra. Protótipo da função:
+
+void novaCompra(int nContas, Conta *vetorContas, int nItens,
+
+Item *vetorItens, int *nCompras, Compra *vetorCompras);
+
+    [0,5 ponto] Faça uma função exibeContas que receba o número total de contas e o vetor de contas, e imprima na tela as informações de todas as contas. Protótipo da função:
+
+void exibeContas(int nContas, Conta *vetorContas);
+
+    [0,5 ponto] Faça uma função exibeItens que receba o número total de itens e o vetor de itens, e imprima na tela as informações de todos os itens. Protótipo da função:
+
+void exibeItens(int nItens, Item *vetorItens);
+
+    [1 ponto] Faça uma função exibeCarrinho que receba o número total de contas, o vetor de contas, o número total de itens, o vetor de itens, o número total de compras e o vetor de compras, solicita ao usuário o código de uma conta e exibe o carrinho de compras desta conta, ou seja, todas as compras com as informações de cada item, quantidade, preço unitário e preço total, além do valor total do carrinho de compras. Protótipo da função:
+
+void exibeCarrinho(int nContas, Conta *vetorContas, int nItens,
+
+Item *vetorItens, int nCompras, Compra *vetorCompras);

@@ -1,4 +1,4 @@
-   /*
+
    
     /*Faça uma função leituraContas que receba o vetor de contas, 
     leia o arquivo Contas.txt, insira cada conta nas posições do vetor de contas 

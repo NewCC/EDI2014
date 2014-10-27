@@ -1,0 +1,4 @@
+    /*Faça uma função leituraItens que receba o vetor de itens, leia o arquivo Itens.txt, insira cada item nas posições do vetor de itens e retorna o número total de itens. Protótipo da função:*/
+    
+
+int leituraItens(Item *vetorItens);

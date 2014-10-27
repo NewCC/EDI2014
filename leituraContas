@@ -1,0 +1,7 @@
+   /*
+   
+    /*Faça uma função leituraContas que receba o vetor de contas, 
+    leia o arquivo Contas.txt, insira cada conta nas posições do vetor de contas 
+    e retorna o número total de contas. Protótipo da função:*/
+
+int leituraContas(Conta *vetorContas);
